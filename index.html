@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,600&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">  
+    <title>Grifter</title>
+    <style>
+        body {
+            background-image: url(./img/IMG_6662.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: snow;
+            font-family: "DM Sans", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 10rem;
+            margin-bottom: 0;
+            font-family: "DM Sans";
+            font-style: italic;
+            font-weight: 700;
+            text-align: center;
+            color: snow;
+            position: relative;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            margin-top: 20px;
+        }
+
+        .band-name {
+            text-decoration: none;
+            width: 100%;
+        }
+
+        .card {
+            margin: 15px auto;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .links a {
+            display: block;
+            font-family: "Lora", serif;
+            font-size: 1.2rem;
+            margin: 5px 0;
+            color: snow;
+            text-decoration: underline;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        ul.links  {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 0;
+        }
+
+        .grid img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .new-today {
+            position: relative;
+            top: 20px;
+            font-style: italic;
+        }
+
+        #about {
+            padding: 20px;
+            font-family: "DM Sans", sans-serif;
+            text-align: center;
+            position: relative;
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: snow;
+            width: 100%;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+        }
+
+        #about a {
+            color: snow;
+            text-decoration: underline;
+        }
+
+        #about a:hover {
+            text-decoration: underline;
+        }
+
+        #about-text, .new-today {
+            color: snow;
+            font-family: "Lora", serif;
+            margin: auto;
+            max-width: 500px;
+            line-height: 1.9rem;
+            padding: 0 10px;
+        }
+
+        #back-home {
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: underline;
+            color: snow;
+            font-family: 'Lora';
+        }
+
+        #back-home:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 4rem;
+            }
+
+            .card {
+                max-width: 95%;
+            }
+            .links a {
+                font-size: 1.4rem;
+            }
+            #about {
+                padding: 10px;
+            }
+            #about p {
+                font-size: 1.5rem;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="band-name">
+        <h1>GRIFTER</h1>
+    </div>
+     <div class="card">
+        <a href="https://www.youtube.com/watch?v=DfZGPhGbW7E&list=PLQgo6pZbWfUNTkPimuvJF2ISFwDp_UMvk" target="_blank">
+            <img src="img/grifter-tv.jpg" alt="new" width="400px">
+        </a>
+        <div class="links">
+            <a href="https://www.youtube.com/watch?v=DfZGPhGbW7E&list=PLQgo6pZbWfUNTkPimuvJF2ISFwDp_UMvk" target="_blank">YouTube</a>
+            <!-- <a href="https://griftertheband.bandcamp.com/album/the-forgiveness-of-distance" target="_blank">Bandcamp</a> -->
+        </div>
+    </div>
+    <div class="card">
+        <a href="https://www.youtube.com/watch?v=obrwtDBETPY&list=PLQgo6pZbWfUPgPVu-VrsE03gNsm0oBXNj" target="_blank">
+            <img src="img/tfod_cover.jpg" alt="Album 1">
+        </a>
+        <div class="links">
+            <a href="https://www.youtube.com/watch?v=obrwtDBETPY&list=PLQgo6pZbWfUPgPVu-VrsE03gNsm0oBXNj" target="_blank">YouTube</a>
+            <a href="https://griftertheband.bandcamp.com/album/the-forgiveness-of-distance" target="_blank">Bandcamp</a>
+        </div>
+    </div>
+    <div class="card">
+        <a href="https://www.youtube.com/watch?v=V-aH_2nOmAo&list=PLQgo6pZbWfUPxHoy8myUTxGSl5rcKolmz" target="_blank">
+            <img src="img/iawb_cover.jpg" alt="Album 2">
+        </a>
+        <div class="links">
+            <a href="https://www.youtube.com/watch?v=V-aH_2nOmAo&list=PLQgo6pZbWfUPxHoy8myUTxGSl5rcKolmz" target="_blank">YouTube</a>
+            <a href="https://griftertheband.bandcamp.com/album/into-a-wild-bloom" target="_blank">Bandcamp</a>
+        </div>
+    </div>
+    <div class="card">
+        <a href="https://www.youtube.com/watch?v=B-oxv05As7M&list=PLQgo6pZbWfUNkoMmI9eS7RTuhnxjaz3ze" target="_blank">
+            <img src="img/self-titled_cover.jpg" alt="Album 3">
+        </a>
+        <div class="links">
+            <a href="https://www.youtube.com/watch?v=B-oxv05As7M&list=PLQgo6pZbWfUNkoMmI9eS7RTuhnxjaz3ze" target="_blank">YouTube</a>
+            <a href="https://griftertheband.bandcamp.com/album/grifter" target="_blank">Bandcamp</a>
+        </div>
+    </div>
+    <div class="card">
+        <a href="https://www.youtube.com/watch?v=hIklxtFCbOM&list=PLQgo6pZbWfUNuij-0wr_UGmK11xG3PXlT" target="_blank">
+            <div class="grid">
+                <img src="img/satchel_cover.jpg" alt="Album 4-1">
+                <img src="img/miles_cover.jpg" alt="Album 4-2">
+                <img src="img/ufo_cover.jpg" alt="Album 4-3">
+                <img src="img/lullabye_cover.jpg" alt="Album 4-4">
+            </div>
+        </a>
+        <div class="links">
+            <a href="https://www.youtube.com/watch?v=hIklxtFCbOM&list=PLQgo6pZbWfUNuij-0wr_UGmK11xG3PXlT" target="_blank">YouTube</a>
+            <a href="https://griftertheband.bandcamp.com/" target="_blank">Bandcamp</a>
+        </div>
+    </div>
+    <div id="about">
+        <div id="about-text">
+            <!-- <p>
+                Grifter is an instrumental duo from Detroit, consisting of Evan Nistor
+                on guitar, keyboard, and samples, and Jon Jackson on drums and
+                marimba. Their music is a unique blend of psychedelic rock and jazz,
+                featuring improvisational and spacey elements that create an immersive
+                and grooving sound.
+            </p> -->
+            <p>
+                Grifter is an instrumental duo from Detroit, featuring Evan Nistor on guitar, keyboard, and samples, and Jon Jackson on drums and marimba.
+            </p>
+            <ul class="links">
+                <li><a href="mailto:griftertheband@gmail.com">GrifterTheBand@gmail.com</a></li>
+                <li><a href="https://www.youtube.com/@GrifterTheBand" target="_blank">YouTube</a></li>
+                <li><a href="https://griftertheband.bandcamp.com/" target="_blank">Bandcamp</a></li>
+                <li><a href="https://www.instagram.com/griftertheband/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/people/Grifter/100091641446890/" target="_blank">Facebook</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+        // Fade in the h1 when the page loads
+        var h1 = document.querySelector('h1');
+        h1.style.opacity = 1;
+
+        // Preload images
+        var images = [
+            "img/tfod_cover.jpg",
+            "img/iawb_cover.jpg",
+            "img/self-titled_cover.jpg",
+            "img/satchel_cover.jpg",
+            "img/miles_cover.jpg",
+            "img/ufo_cover.jpg",
+            "img/lullabye_cover.jpg",
+        ];
+        for (var i = 0; i < images.length; i++) {
+            var img = new Image();
+            img.src = images[i];
+        }
+    };
+    </script>
+</body>
+</html>
+
