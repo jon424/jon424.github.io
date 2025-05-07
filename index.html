@@ -8,13 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,600&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">  
     <title>Grifter</title>
     <style>
-        /* .logo {
+        .logo {
             display: block;
-            margin: auto;
-        } */
+            margin: 0 auto;
+            width: 1000px;
+            max-width: 90%;
+            height: auto;
+        }
         body {
-            background-image: url(./img/IMG_6662.jpg);
-            /* background-color: black; */
+            /* background-image: url(./img/IMG_6662.jpg); */
+            background-color: black;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -57,10 +60,13 @@
         .band-name {
             text-decoration: none;
             width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .card {
-            margin: 15px auto;
+            margin: 15px;
             width: 100%;
             max-width: 400px;
             text-align: center;
@@ -159,8 +165,29 @@
                 font-size: 4rem;
             }
 
+            .logo {
+                width: 90%;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .band-name {
+                width: 100%;
+                padding: 0 10px;
+            }
+
+            .cards-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 20px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
             .card {
-                max-width: 95%;
+                max-width: 100%;
+                margin: 15px auto;
             }
             .links a {
                 font-size: 1.4rem;
@@ -173,88 +200,101 @@
                 text-align: left;
             }
         }
+
+        /* Add new grid container styles */
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
     <div class="band-name">
-        <h1>GRIFTER</h1>
-        <!-- <img class="logo" src="img/grifter_logo.JPEG" alt="grifter_logo" width="400px"> -->
+        <!-- <h1>GRIFTER</h1> -->
+        <img class="logo" src="img/grifter_logo.JPEG" alt="grifter_logo">
     </div>
-    <div class="card">
-        <a href="https://www.youtube.com/playlist?list=PLQgo6pZbWfUPBvvUvaVMueq9Qu3Rbbe0E" target="_blank">
-            <img src="img/Termination_Dust_Cover.JPG" alt="Termination_Dust_Cover" width="400px">
-        </a>
-        <div class="links">
-            <a href="https://www.youtube.com/playlist?list=PLQgo6pZbWfUPBvvUvaVMueq9Qu3Rbbe0E" target="_blank">YouTube</a>
-            <a href="https://griftertheband.bandcamp.com/album/termination-dust" target="_blank">Bandcamp</a>
-        </div>
-    </div>
-    <div class="card">
-        <a href="https://www.youtube.com/playlist?list=PLQgo6pZbWfUNHwF4McKgNjIJXdoa8WREZ" target="_blank">
-            <img src="img/above_it_all_cover.GIF" alt="z-in-7-lizard-people-lounge-going-gone" width="400px">
-        </a>
-        <div class="links">
-            <a href="https://www.youtube.com/playlist?list=PLQgo6pZbWfUNHwF4McKgNjIJXdoa8WREZ" target="_blank">YouTube</a>
-            <a href="https://griftertheband.bandcamp.com/album/above-it-all" target="_blank">Bandcamp</a>
-        </div>
-    </div>
-     <div class="card">
-            <a href="https://www.youtube.com/playlist?list=PLQgo6pZbWfUPJWU1OzFaLIvR-ovgIn4lh" target="_blank">
-                <img src="img/fall2024.jpg" alt="z-in-7-lizard-people-lounge-going-gone" width="400px">
+    <div class="cards-container">
+        <div class="card">
+            <a href="https://www.youtube.com/playlist?list=PLQgo6pZbWfUPBvvUvaVMueq9Qu3Rbbe0E" target="_blank">
+                <img src="img/Termination_Dust_Cover.JPG" alt="Termination_Dust_Cover" width="400px">
             </a>
             <div class="links">
-                <a href="https://www.youtube.com/playlist?list=PLQgo6pZbWfUPJWU1OzFaLIvR-ovgIn4lh" target="_blank">YouTube</a>
-                <a href="https://griftertheband.bandcamp.com/album/z-in-7-lizard-people-lounge-going-gone" target="_blank">Bandcamp</a>
+                <a href="https://www.youtube.com/playlist?list=PLQgo6pZbWfUPBvvUvaVMueq9Qu3Rbbe0E" target="_blank">YouTube</a>
+                <a href="https://griftertheband.bandcamp.com/album/termination-dust" target="_blank">Bandcamp</a>
             </div>
         </div>
         <div class="card">
-        <a href="https://www.youtube.com/watch?v=DfZGPhGbW7E&list=PLQgo6pZbWfUNTkPimuvJF2ISFwDp_UMvk" target="_blank">
-            <img src="img/grifter-tv.jpg" alt="new" width="400px">
-        </a>
-        <div class="links">
-            <a href="https://www.youtube.com/watch?v=DfZGPhGbW7E&list=PLQgo6pZbWfUNTkPimuvJF2ISFwDp_UMvk" target="_blank">YouTube</a>
-            <a href="https://griftertheband.bandcamp.com/album/korean-bbq-treadwell-underwater-level" target="_blank">Bandcamp</a>
-        </div>
-        </div>
-    <div class="card">
-        <a href="https://www.youtube.com/watch?v=obrwtDBETPY&list=PLQgo6pZbWfUPgPVu-VrsE03gNsm0oBXNj" target="_blank">
-            <img src="img/tfod_cover.jpg" alt="Album 1">
-        </a>
-        <div class="links">
-            <a href="https://www.youtube.com/watch?v=obrwtDBETPY&list=PLQgo6pZbWfUPgPVu-VrsE03gNsm0oBXNj" target="_blank">YouTube</a>
-            <a href="https://griftertheband.bandcamp.com/album/the-forgiveness-of-distance" target="_blank">Bandcamp</a>
-        </div>
-    </div>
-    <div class="card">
-        <a href="https://www.youtube.com/watch?v=V-aH_2nOmAo&list=PLQgo6pZbWfUPxHoy8myUTxGSl5rcKolmz" target="_blank">
-            <img src="img/iawb_cover.jpg" alt="Album 2">
-        </a>
-        <div class="links">
-            <a href="https://www.youtube.com/watch?v=V-aH_2nOmAo&list=PLQgo6pZbWfUPxHoy8myUTxGSl5rcKolmz" target="_blank">YouTube</a>
-            <a href="https://griftertheband.bandcamp.com/album/into-a-wild-bloom" target="_blank">Bandcamp</a>
-        </div>
-    </div>
-    <div class="card">
-        <a href="https://www.youtube.com/watch?v=B-oxv05As7M&list=PLQgo6pZbWfUNkoMmI9eS7RTuhnxjaz3ze" target="_blank">
-            <img src="img/self-titled_cover.jpg" alt="Album 3">
-        </a>
-        <div class="links">
-            <a href="https://www.youtube.com/watch?v=B-oxv05As7M&list=PLQgo6pZbWfUNkoMmI9eS7RTuhnxjaz3ze" target="_blank">YouTube</a>
-            <a href="https://griftertheband.bandcamp.com/album/grifter" target="_blank">Bandcamp</a>
-        </div>
-    </div>
-    <div class="card">
-        <a href="https://www.youtube.com/watch?v=hIklxtFCbOM&list=PLQgo6pZbWfUNuij-0wr_UGmK11xG3PXlT" target="_blank">
-            <div class="grid">
-                <img src="img/satchel_cover.jpg" alt="Album 4-1">
-                <img src="img/miles_cover.jpg" alt="Album 4-2">
-                <img src="img/ufo_cover.jpg" alt="Album 4-3">
-                <img src="img/lullabye_cover.jpg" alt="Album 4-4">
+            <a href="https://www.youtube.com/playlist?list=PLQgo6pZbWfUNHwF4McKgNjIJXdoa8WREZ" target="_blank">
+                <img src="img/above_it_all_cover.GIF" alt="z-in-7-lizard-people-lounge-going-gone" width="400px">
+            </a>
+            <div class="links">
+                <a href="https://www.youtube.com/playlist?list=PLQgo6pZbWfUNHwF4McKgNjIJXdoa8WREZ" target="_blank">YouTube</a>
+                <a href="https://griftertheband.bandcamp.com/album/above-it-all" target="_blank">Bandcamp</a>
             </div>
-        </a>
-        <div class="links">
-            <a href="https://www.youtube.com/watch?v=hIklxtFCbOM&list=PLQgo6pZbWfUNuij-0wr_UGmK11xG3PXlT" target="_blank">YouTube</a>
-            <a href="https://griftertheband.bandcamp.com/" target="_blank">Bandcamp</a>
+        </div>
+         <div class="card">
+                <a href="https://www.youtube.com/playlist?list=PLQgo6pZbWfUPJWU1OzFaLIvR-ovgIn4lh" target="_blank">
+                    <img src="img/fall2024.jpg" alt="z-in-7-lizard-people-lounge-going-gone" width="400px">
+                </a>
+                <div class="links">
+                    <a href="https://www.youtube.com/playlist?list=PLQgo6pZbWfUPJWU1OzFaLIvR-ovgIn4lh" target="_blank">YouTube</a>
+                    <a href="https://griftertheband.bandcamp.com/album/z-in-7-lizard-people-lounge-going-gone" target="_blank">Bandcamp</a>
+                </div>
+            </div>
+            <div class="card">
+            <a href="https://www.youtube.com/watch?v=DfZGPhGbW7E&list=PLQgo6pZbWfUNTkPimuvJF2ISFwDp_UMvk" target="_blank">
+                <img src="img\grifter_24.JPG" alt="new" width="400px">
+            </a>
+            <div class="links">
+                <a href="https://www.youtube.com/watch?v=DfZGPhGbW7E&list=PLQgo6pZbWfUNTkPimuvJF2ISFwDp_UMvk" target="_blank">YouTube</a>
+                <a href="https://griftertheband.bandcamp.com/album/korean-bbq-treadwell-underwater-level" target="_blank">Bandcamp</a>
+            </div>
+            </div>
+        <div class="card">
+            <a href="https://www.youtube.com/watch?v=obrwtDBETPY&list=PLQgo6pZbWfUPgPVu-VrsE03gNsm0oBXNj" target="_blank">
+                <img src="img/tfod_cover.jpg" alt="Album 1">
+            </a>
+            <div class="links">
+                <a href="https://www.youtube.com/watch?v=obrwtDBETPY&list=PLQgo6pZbWfUPgPVu-VrsE03gNsm0oBXNj" target="_blank">YouTube</a>
+                <a href="https://griftertheband.bandcamp.com/album/the-forgiveness-of-distance" target="_blank">Bandcamp</a>
+            </div>
+        </div>
+        <div class="card">
+            <a href="https://www.youtube.com/watch?v=V-aH_2nOmAo&list=PLQgo6pZbWfUPxHoy8myUTxGSl5rcKolmz" target="_blank">
+                <img src="img/iawb_cover.jpg" alt="Album 2">
+            </a>
+            <div class="links">
+                <a href="https://www.youtube.com/watch?v=V-aH_2nOmAo&list=PLQgo6pZbWfUPxHoy8myUTxGSl5rcKolmz" target="_blank">YouTube</a>
+                <a href="https://griftertheband.bandcamp.com/album/into-a-wild-bloom" target="_blank">Bandcamp</a>
+            </div>
+        </div>
+        <div class="card">
+            <a href="https://www.youtube.com/watch?v=B-oxv05As7M&list=PLQgo6pZbWfUNkoMmI9eS7RTuhnxjaz3ze" target="_blank">
+                <img src="img/self-titled_cover.jpg" alt="Album 3">
+            </a>
+            <div class="links">
+                <a href="https://www.youtube.com/watch?v=B-oxv05As7M&list=PLQgo6pZbWfUNkoMmI9eS7RTuhnxjaz3ze" target="_blank">YouTube</a>
+                <a href="https://griftertheband.bandcamp.com/album/grifter" target="_blank">Bandcamp</a>
+            </div>
+        </div>
+        <div class="card">
+            <a href="https://www.youtube.com/watch?v=hIklxtFCbOM&list=PLQgo6pZbWfUNuij-0wr_UGmK11xG3PXlT" target="_blank">
+                <div class="grid">
+                    <img src="img/satchel_cover.jpg" alt="Album 4-1">
+                    <img src="img/miles_cover.jpg" alt="Album 4-2">
+                    <img src="img/ufo_cover.jpg" alt="Album 4-3">
+                    <img src="img/lullabye_cover.jpg" alt="Album 4-4">
+                </div>
+            </a>
+            <div class="links">
+                <a href="https://www.youtube.com/watch?v=hIklxtFCbOM&list=PLQgo6pZbWfUNuij-0wr_UGmK11xG3PXlT" target="_blank">YouTube</a>
+                <a href="https://griftertheband.bandcamp.com/" target="_blank">Bandcamp</a>
+            </div>
         </div>
     </div>
     <div id="about">
