@@ -107,9 +107,13 @@
     updateCountdown();
 
       // script to handle click anywhere
-  document.body.addEventListener('click', function() {
-    window.location.href = 'home.html'; // change this to your actual homepage file path
-  });
+     document.body.addEventListener('click', function(event) {
+       // Check if the click was on the video or its controls
+       if (event.target.closest('.video-container')) {
+         return; // Don't navigate if clicking on video
+       }
+       window.location.href = 'home.html';
+     });
   </script>
 
 </body>
